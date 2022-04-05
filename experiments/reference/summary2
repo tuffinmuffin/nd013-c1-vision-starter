@@ -1,0 +1,205 @@
+022-04-05 02:55:10.209587: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+WARNING:tensorflow:Forced number of epochs for all eval validations to be 1.
+W0405 02:55:24.688326 140105586272000 model_lib_v2.py:1063] Forced number of epochs for all eval validations to be 1.
+INFO:tensorflow:Maybe overwriting sample_1_of_n_eval_examples: None
+I0405 02:55:24.688549 140105586272000 config_util.py:552] Maybe overwriting sample_1_of_n_eval_examples: None
+INFO:tensorflow:Maybe overwriting use_bfloat16: False
+I0405 02:55:24.688677 140105586272000 config_util.py:552] Maybe overwriting use_bfloat16: False
+INFO:tensorflow:Maybe overwriting eval_num_epochs: 1
+I0405 02:55:24.688864 140105586272000 config_util.py:552] Maybe overwriting eval_num_epochs: 1
+WARNING:tensorflow:Expected number of evaluation epochs is 1, but instead encountered `eval_on_train_input_config.num_epochs` = 0. Overwriting `num_epochs` to 1.
+W0405 02:55:24.689120 140105586272000 model_lib_v2.py:1084] Expected number of evaluation epochs is 1, but instead encountered `eval_on_train_input_config.num_epochs` = 0. Overwriting `num_epochs` to 1.
+2022-04-05 02:55:24.725214: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2022-04-05 02:55:24.779669: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:24.780738: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla K80 computeCapability: 3.7
+coreClock: 0.8235GHz coreCount: 13 deviceMemorySize: 11.17GiB deviceMemoryBandwidth: 223.96GiB/s
+2022-04-05 02:55:24.780805: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2022-04-05 02:55:25.058308: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2022-04-05 02:55:25.189245: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2022-04-05 02:55:25.255277: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2022-04-05 02:55:25.473383: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2022-04-05 02:55:25.521776: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2022-04-05 02:55:25.878013: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2022-04-05 02:55:25.878431: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:25.879528: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:25.880392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2022-04-05 02:55:25.881021: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-04-05 02:55:25.917888: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2299995000 Hz
+2022-04-05 02:55:25.918238: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55af3cc53610 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-04-05 02:55:25.918305: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-04-05 02:55:25.997852: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:25.998867: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55af3cc6f280 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2022-04-05 02:55:25.998904: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2022-04-05 02:55:26.001664: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:26.002497: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla K80 computeCapability: 3.7
+coreClock: 0.8235GHz coreCount: 13 deviceMemorySize: 11.17GiB deviceMemoryBandwidth: 223.96GiB/s
+2022-04-05 02:55:26.002558: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2022-04-05 02:55:26.002667: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2022-04-05 02:55:26.002770: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2022-04-05 02:55:26.002851: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2022-04-05 02:55:26.002930: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2022-04-05 02:55:26.003022: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2022-04-05 02:55:26.003089: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2022-04-05 02:55:26.003262: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:26.004340: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:26.005310: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2022-04-05 02:55:26.007406: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2022-04-05 02:55:28.497754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-04-05 02:55:28.497830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2022-04-05 02:55:28.497864: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2022-04-05 02:55:28.502822: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:28.503876: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-04-05 02:55:28.504772: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10609 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:04.0, compute capability: 3.7)
+INFO:tensorflow:Reading unweighted datasets: ['/home/workspace/data/output/test/segment-10963653239323173269_1924_000_1944_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10964956617027590844_1584_680_1604_680_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11060291335850384275_3761_210_3781_210_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-1191788760630624072_3880_000_3900_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11343624116265195592_5910_530_5930_530_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11076364019363412893_1711_000_1731_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11119453952284076633_1369_940_1389_940_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11925224148023145510_1040_000_1060_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11674150664140226235_680_000_700_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord']
+I0405 02:55:28.786303 140105586272000 dataset_builder.py:163] Reading unweighted datasets: ['/home/workspace/data/output/test/segment-10963653239323173269_1924_000_1944_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10964956617027590844_1584_680_1604_680_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11060291335850384275_3761_210_3781_210_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-1191788760630624072_3880_000_3900_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11343624116265195592_5910_530_5930_530_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11076364019363412893_1711_000_1731_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11119453952284076633_1369_940_1389_940_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11925224148023145510_1040_000_1060_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11674150664140226235_680_000_700_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord']
+INFO:tensorflow:Reading record datasets for input file: ['/home/workspace/data/output/test/segment-10963653239323173269_1924_000_1944_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10964956617027590844_1584_680_1604_680_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11060291335850384275_3761_210_3781_210_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-1191788760630624072_3880_000_3900_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11343624116265195592_5910_530_5930_530_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11076364019363412893_1711_000_1731_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11119453952284076633_1369_940_1389_940_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11925224148023145510_1040_000_1060_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11674150664140226235_680_000_700_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord']
+I0405 02:55:28.804602 140105586272000 dataset_builder.py:80] Reading record datasets for input file: ['/home/workspace/data/output/test/segment-10963653239323173269_1924_000_1944_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10964956617027590844_1584_680_1604_680_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11060291335850384275_3761_210_3781_210_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-1191788760630624072_3880_000_3900_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11343624116265195592_5910_530_5930_530_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11076364019363412893_1711_000_1731_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11119453952284076633_1369_940_1389_940_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11925224148023145510_1040_000_1060_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11674150664140226235_680_000_700_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/home/workspace/data/output/test/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord']
+INFO:tensorflow:Number of filenames to read: 19
+I0405 02:55:28.804821 140105586272000 dataset_builder.py:81] Number of filenames to read: 19
+WARNING:tensorflow:num_readers has been reduced to 19 to match input file shards.
+W0405 02:55:28.804978 140105586272000 dataset_builder.py:88] num_readers has been reduced to 19 to match input file shards.
+WARNING:tensorflow:`shuffle` is false, but the input data stream is still slightly shuffled since `num_readers` > 1.
+W0405 02:55:28.815035 140105586272000 dataset_builder.py:94] `shuffle` is false, but the input data stream is still slightly shuffled since `num_readers` > 1.
+WARNING:tensorflow:From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/builders/dataset_builder.py:105: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_deterministic`.
+W0405 02:55:28.817982 140105586272000 deprecation.py:323] From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/builders/dataset_builder.py:105: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.experimental.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_deterministic`.
+WARNING:tensorflow:From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/builders/dataset_builder.py:237: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map()
+W0405 02:55:28.936152 140105586272000 deprecation.py:323] From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/builders/dataset_builder.py:237: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map()
+WARNING:tensorflow:From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/tensorflow/python/util/dispatch.py:201: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+W0405 02:55:34.198675 140105586272000 deprecation.py:323] From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/tensorflow/python/util/dispatch.py:201: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+WARNING:tensorflow:From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/inputs.py:282: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0405 02:55:35.815882 140105586272000 deprecation.py:323] From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/inputs.py:282: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:Waiting for new checkpoint at experiments/reference/
+I0405 02:55:39.607140 140105586272000 checkpoint_utils.py:125] Waiting for new checkpoint at experiments/reference/
+INFO:tensorflow:Found new checkpoint at experiments/reference/ckpt-4
+I0405 02:55:39.609241 140105586272000 checkpoint_utils.py:134] Found new checkpoint at experiments/reference/ckpt-4
+WARNING:tensorflow:From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/model_lib_v2.py:844: set_learning_phase (from tensorflow.python.keras.backend) is deprecated and will be removed after 2020-10-11.
+Instructions for updating:
+Simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+W0405 02:55:39.662770 140105586272000 deprecation.py:323] From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/model_lib_v2.py:844: set_learning_phase (from tensorflow.python.keras.backend) is deprecated and will be removed after 2020-10-11.
+Instructions for updating:
+Simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+2022-04-05 02:56:09.556291: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2022-04-05 02:56:10.699686: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2022-04-05 02:56:13.729005: W tensorflow/stream_executor/gpu/asm_compiler.cc:116] *** WARNING *** You are using ptxas 9.0.176, which is older than 9.2.88. ptxas 9.x before 9.2.88 is known to miscompile XLA code, leading to incorrect results or invalid-address errors.
+
+You do not need to update to CUDA 9.2.88; cherry-picking the ptxas binary is sufficient.
+WARNING:tensorflow:From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/eval_util.py:929: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0405 02:56:14.878963 140105586272000 deprecation.py:323] From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/eval_util.py:929: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:Finished eval step 0
+I0405 02:56:14.889732 140105586272000 model_lib_v2.py:939] Finished eval step 0
+WARNING:tensorflow:From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/utils/visualization_utils.py:617: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+W0405 02:56:15.080168 140105586272000 deprecation.py:323] From /data/virtual_envs/sdc-c1-gpu-augment/lib/python3.7/site-packages/object_detection/utils/visualization_utils.py:617: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+INFO:tensorflow:Finished eval step 100
+I0405 02:56:35.749794 140105586272000 model_lib_v2.py:939] Finished eval step 100
+INFO:tensorflow:Finished eval step 200
+I0405 02:56:52.713505 140105586272000 model_lib_v2.py:939] Finished eval step 200
+INFO:tensorflow:Finished eval step 300
+I0405 02:57:10.056902 140105586272000 model_lib_v2.py:939] Finished eval step 300
+INFO:tensorflow:Performing evaluation on 380 images.
+I0405 02:57:23.306305 140105586272000 coco_evaluation.py:293] Performing evaluation on 380 images.
+creating index...
+index created!
+INFO:tensorflow:Loading and preparing annotation results...
+I0405 02:57:23.314915 140105586272000 coco_tools.py:116] Loading and preparing annotation results...
+INFO:tensorflow:DONE (t=0.03s)
+I0405 02:57:23.341930 140105586272000 coco_tools.py:138] DONE (t=0.03s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=45.64s).
+Accumulating evaluation results...
+DONE (t=0.59s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.003
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.003
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.013
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.002
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.008
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.028
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.009
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.071
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.298
+INFO:tensorflow:Eval metrics at step 4000
+I0405 02:58:09.612534 140105586272000 model_lib_v2.py:988] Eval metrics at step 4000
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP: 0.000947
+I0405 02:58:09.621260 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP: 0.000947
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP@.50IOU: 0.003100
+I0405 02:58:09.623049 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP@.50IOU: 0.003100
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP@.75IOU: 0.000303
+I0405 02:58:09.624779 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP@.75IOU: 0.000303
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP (small): 0.000167
+I0405 02:58:09.626331 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP (small): 0.000167
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP (medium): 0.002671
+I0405 02:58:09.628195 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP (medium): 0.002671
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP (large): 0.012649
+I0405 02:58:09.630052 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP (large): 0.012649
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@1: 0.002455
+I0405 02:58:09.631755 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@1: 0.002455
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@10: 0.008158
+I0405 02:58:09.633292 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@10: 0.008158
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@100: 0.028199
+I0405 02:58:09.635154 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@100: 0.028199
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@100 (small): 0.008875
+I0405 02:58:09.636764 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@100 (small): 0.008875
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@100 (medium): 0.071121
+I0405 02:58:09.638457 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@100 (medium): 0.071121
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@100 (large): 0.298496
+I0405 02:58:09.640255 140105586272000 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@100 (large): 0.298496
+INFO:tensorflow:    + Loss/localization_loss: 0.736329
+I0405 02:58:09.641660 140105586272000 model_lib_v2.py:991]  + Loss/localization_loss: 0.736329
+INFO:tensorflow:    + Loss/classification_loss: 0.717489
+I0405 02:58:09.643123 140105586272000 model_lib_v2.py:991]  + Loss/classification_loss: 0.717489
+INFO:tensorflow:    + Loss/regularization_loss: 2.797890
+I0405 02:58:09.644495 140105586272000 model_lib_v2.py:991]  + Loss/regularization_loss: 2.797890
+INFO:tensorflow:    + Loss/total_loss: 4.251708
+I0405 02:58:09.645911 140105586272000 model_lib_v2.py:991]  + Loss/total_loss: 4.251708

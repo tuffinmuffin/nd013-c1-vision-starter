@@ -100,11 +100,15 @@ You will now launch your very first experiment with the Tensorflow object detect
 * a training process:
 ```
 python experiments/model_main_tf2.py --model_dir=experiments/reference/ --pipeline_config_path=experiments/reference/pipeline_new.config
+python experiments/model_main_tf2.py --model_dir=experiments/exp1/ --pipeline_config_path=experiments/exp1/pipeline_new.config
+python experiments/model_main_tf2.py --model_dir=experiments/exp2/ --pipeline_config_path=experiments/exp2/pipeline_new.config
 ```
 Once the training is finished, launch the evaluation process:
 * an evaluation process:
 ```
 python experiments/model_main_tf2.py --model_dir=experiments/reference/ --pipeline_config_path=experiments/reference/pipeline_new.config --checkpoint_dir=experiments/reference/
+python experiments/model_main_tf2.py --model_dir=experiments/exp1/ --pipeline_config_path=experiments/exp1/pipeline_new.config --checkpoint_dir=experiments/exp1/
+python experiments/model_main_tf2.py --model_dir=experiments/exp2/ --pipeline_config_path=experiments/exp2/pipeline_new.config --checkpoint_dir=experiments/exp2/
 ```
 
 **Note**: Both processes will display some Tensorflow warnings, which can be ignored. You may have to kill the evaluation script manually using
@@ -136,6 +140,10 @@ This should create a new folder `experiments/reference/exported/saved_model`. Yo
 Finally, you can create a video of your model's inferences for any tf record file. To do so, run the following command (modify it to your files):
 ```
 python inference_video.py --labelmap_path label_map.pbtxt --model_path experiments/reference/exported/saved_model --tf_record_path /data/waymo/testing/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord --config_path experiments/reference/pipeline_new.config --output_path animation.gif
+
+ex
+
+
 ```
 
 ## Submission Template
