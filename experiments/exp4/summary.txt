@@ -1,0 +1,52 @@
+Accumulating evaluation results...
+DONE (t=0.23s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.003
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.002
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.002
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.052
+INFO:tensorflow:Eval metrics at step 4000
+I0405 06:04:41.618799 139684061730560 model_lib_v2.py:988] Eval metrics at step 4000
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP: 0.000785
+I0405 06:04:41.627949 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP: 0.000785
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP@.50IOU: 0.002539
+I0405 06:04:41.629596 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP@.50IOU: 0.002539
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP@.75IOU: 0.000039
+I0405 06:04:41.631198 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP@.75IOU: 0.000039
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP (small): 0.000000
+I0405 06:04:41.633046 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP (small): 0.000000
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP (medium): 0.000000
+I0405 06:04:41.634670 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP (medium): 0.000000
+INFO:tensorflow:    + DetectionBoxes_Precision/mAP (large): 0.002107
+I0405 06:04:41.636380 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Precision/mAP (large): 0.002107
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@1: 0.000189
+I0405 06:04:41.638103 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@1: 0.000189
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@10: 0.001636
+I0405 06:04:41.639738 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@10: 0.001636
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@100: 0.002649
+I0405 06:04:41.641604 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@100: 0.002649
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@100 (small): 0.000000
+I0405 06:04:41.643073 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@100 (small): 0.000000
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@100 (medium): 0.000000
+I0405 06:04:41.644676 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@100 (medium): 0.000000
+INFO:tensorflow:    + DetectionBoxes_Recall/AR@100 (large): 0.052193
+I0405 06:04:41.646298 139684061730560 model_lib_v2.py:991]  + DetectionBoxes_Recall/AR@100 (large): 0.052193
+INFO:tensorflow:    + Loss/localization_loss: 0.834971
+I0405 06:04:41.647724 139684061730560 model_lib_v2.py:991]  + Loss/localization_loss: 0.834971
+INFO:tensorflow:    + Loss/classification_loss: 4.106234
+I0405 06:04:41.649173 139684061730560 model_lib_v2.py:991]  + Loss/classification_loss: 4.106234
+INFO:tensorflow:    + Loss/regularization_loss: 415.215027
+I0405 06:04:41.650499 139684061730560 model_lib_v2.py:991]  + Loss/regularization_loss: 415.215027
+INFO:tensorflow:    + Loss/total_loss: 420.156219
+I0405 06:04:41.651925 139684061730560 model_lib_v2.py:991]  + Loss/total_loss: 420.156219
+INFO:tensorflow:Waiting for new checkpoint at experiments/exp4/
+I0405 06:08:07.731860 139684061730560 checkpoint_utils.py:125] Waiting for new checkpoint at experiments/exp4/
+INFO:tensorflow:Timed-out waiting for a checkpoint.
+I0405 06:09:06.911293 139684061730560 checkpoint_utils.py:188] Timed-out waiting for a checkpoint.
