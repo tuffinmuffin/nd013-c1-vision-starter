@@ -149,20 +149,51 @@ ex
 ## Submission Template
 
 ### Project overview
-This section should contain a brief description of the project and what we are trying to achieve. Why is object detection such an important component of self driving car systems?
+One of the most important senses while driving a vechile is sight. The amount of information we can infer from sight is amazing. So it stands to reasons if we want to automate the task we need to collect data and process it into similar catagories that humans do. Coupled with visual sensors being cheap it makes an obvious choice for collecting data about the world. However it is not without challenges.
+The human vision system does an amazing job as quickly and fairly accurately classifying and filtering the world. However as it currently stands this is very hard problem for computers to solve. Over the last decade there has been advances in processing visual data by machines. This project is to demonstrate an example how machines can uses the new advances to classify 3 types of objects that are commonly seen in vehicles; cars, pedestrians, and bicyclist. After these have been localized and identified this data can be used to assist machines in modeling the world and drawing predictions about its future state then planning courses of actions.
 
 ### Set up
-This section should contain a brief description of the steps to follow to run the code for this repository.
-
+The steps to setup and run are documented in the original README.md and are listed above. No large changes from the reference project setup were introduced. All CLI arguments behave as described.
 ### Dataset
 #### Dataset analysis
-This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
+Please see <a href="/Exploratory Data Analysis.html">Jupyter Notebook</a>
 #### Cross validation
-This section should detail the cross validation strategy and justify your approach.
+The groups of training images were kept together in their collected data sets to prevent succesive frames from being mixed resulting in very similar data. After this was decided the data then randomly sorted and split.
+| Type | Percentage |
+--- | --- |
+|Training |70|
+|Test|20|
+|Cross Validation|10|
 
+This followed general guide lines that was presented for data selection. Sampled data can be see along with analysis of distribution of data can be seen near the end of <a href="/Exploratory Data Analysis.html">Jupyter Notebook</a>. The only concern with data distribution is presented there but it was that the cyclist in the Cross Validation images tended to be larger than average.
 ### Training
 #### Reference experiment
-This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.
+A total of 6 experiments were run. However 2 were lost when the VM shut down before the configs were pushed. The lost experiments will be ignored.
 
-#### Improve on the reference
-This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
+#### Reference
+This was the first experiment using the config provided. The only change made here was to drop the training steps to 5k from 25k. The 25k could not be run due to disk space limitations. The training rate was also adjusted down to 5k steps.
+#### Exp1 -
+This exirment added data augmention. Two augmentions were picked and added.
+* Random brightness adjustments for +/- 30%. This was selected to simulate differing weather and lighting conditions.
+* Random JPEG noise. This was selected to simulate less than ideal sensors across differing vechiles, data losses due to cheaper cameras with lower resolution or bandwidth.
+
+#### Exp2
+The configuration was lost for this but the training image was captured. This experiment will be ignored except as a note. The original exp3 was also lost but without even a captured tensor flow image.
+Exp2 was changing the batch size. The performance was very poor so I did not recreate it.
+#### Exp3
+This experiment kept the data augs from Exp1 and changed the learning rate to be more aggressive during ramp up and a slower ramp down.
+#### Exp4
+This experiment removed all data augmention including the original ones provided in the sample pipeline doing random crops and resizes.
+
+
+
+| Name | Training Classification Loss | Training Localization Loss | Test Classification Loss | Test localization Loss |
+|-------|-------|-------|-------|-------|
+|Reference|0.67|0.75|0.717|0.736|
+|Exp1|0.75|0.7|0.827|0.914|
+|Exp2|600|0.85|-|-|
+|Exp3|0.678|0.72|0.74|0.94|
+|Exp4|2.27|0.9|4.10|0.83|
+
+I believe after looking at post processed images the exp1 brightness adjust was too much and was causing many details to be lost and ended up in slightly worse performance. However from exp4 it is clear that the random cropping and resizing of the image is beneficial and greatly helped the model recognize various objects. Overall I was not happy with the performance of any of these results but due to not having a local environment to run and the VM crashing alot and the disk space issues it quickly became evident that variations were going to be limited. Between needed to complete this task, running low on GPU time, and pushing the deadline I ended up collecting the data I had. In the future I'd like to adjust more of the hyper parameters and try to tune the data augmenting better.
+
