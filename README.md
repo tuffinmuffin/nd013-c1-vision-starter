@@ -172,19 +172,44 @@ A total of 6 experiments were run. However 2 were lost when the VM shut down bef
 
 #### Reference
 This was the first experiment using the config provided. The only change made here was to drop the training steps to 5k from 25k. The 25k could not be run due to disk space limitations. The training rate was also adjusted down to 5k steps.
+
+##### Reference Training
+<img title="Tensor Flow" src="experiments/reference/tensorboard_3_5k.png">
+Reference training progressed about as expected. A few jumps show where local minimum were pushed by. After reading around 2k training sets the acurracy steady decreased until it neared a bottom line.
+
 #### Exp1 -
 This exirment added data augmention. Two augmentions were picked and added.
 * Random brightness adjustments for +/- 30%. This was selected to simulate differing weather and lighting conditions.
 * Random JPEG noise. This was selected to simulate less than ideal sensors across differing vechiles, data losses due to cheaper cameras with lower resolution or bandwidth.
 
+##### Exp1 Training
+<img title="Tensor Flow" src="experiments/exp1/tensorflow_exp1.png">
+Reference training progressed about as expected. A few jumps show where local minimum were pushed by. After reading around 2k training sets the acurracy steady decreased until it neared a bottom line.
+After adding augmention to the data set there were fewer local minium that the trainng was caught it. After the initial triaining started the loss quickly settled into a steady downward slope until it neared a flat line around 4k iterations.
+
 #### Exp2
 The configuration was lost for this but the training image was captured. This experiment will be ignored except as a note. The original exp3 was also lost but without even a captured tensor flow image.
 Exp2 was changing the batch size. The performance was very poor so I did not recreate it.
+
+##### Exp2 Training
+<img title="Tensor Flow" src="experiments/exp2/exp2_batch128.png">
+From the board traing losses were totally overshadowed after the losses had major issues at 4k training. After losing the data set I did not revist this as the choice to change batch sizes appeared to have been a bad decision. The batch size was changed from 64 tp 128.
+
 #### Exp3
 This experiment kept the data augs from Exp1 and changed the learning rate to be more aggressive during ramp up and a slower ramp down.
+
+##### Exp3 Training
+<img title="Tensor Flow" src="experiments/exp3/rebuild_tensorflow4k.png">
+The oddities seen with double graphs was due to running out of disk space and restarting training from a check point.
+
+During the learning ramp up rate the training appeared to be about the same as the refernce and exp1. When the new training rate was hit there was a sudden jump in losses which then started fall back off. At the end of training the training loss was similar to the reference experiment but the validation loss was worse leading me to believe the network was beginging to be over trained with the higher training rate.
+
 #### Exp4
 This experiment removed all data augmention including the original ones provided in the sample pipeline doing random crops and resizes.
 
+##### Exp4 Training
+<img title="Tensor Flow" src="experiments/exp4/tensorflow.png">
+Removing data aumentions all together had a marketed effect on the training. The losses jumped quite a bit early on leading it to appear without cropping input images the network was having issues classifing objects. At the end of training the classification loss has flattened off but was overall much worse than the previous exiprments. The validation data was also much worse than the training data leading to what appears to be over fitting.
 
 
 | Name | Training Classification Loss | Training Localization Loss | Test Classification Loss | Test localization Loss |
